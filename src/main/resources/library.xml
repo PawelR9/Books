@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+    <author>
+        <id>1</id>
+        <name>Jan Kowalski</name>
+        <birthYear>1980</birthYear>
+    </author>
+    <author>
+        <id>2</id>
+        <name>Anna Nowak</name>
+        <birthYear>1975</birthYear>
+    </author>
+    <book>
+        <id>1</id>
+        <title>Java Programming</title>
+        <authorId>1</authorId>
+        <publishedYear>2021</publishedYear>
+    </book>
+    <book>
+        <id>2</id>
+        <title>Database Systems</title>
+        <authorId>2</authorId>
+        <publishedYear>2019</publishedYear>
+    </book>
+</library>
