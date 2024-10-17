@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<library>
+    <book id="1">
+        <title>Solvd Book</title>
+        <author id="1">
+            <authorName>Jan Kowalski</authorName>
+            <authorBirthYear>1980</authorBirthYear>
+            <authorBirthDate>1980-01-01T00:00:00+01:00</authorBirthDate>
+        </author>
+        <yearOfPublished>2024</yearOfPublished>
+    </book>
+    <book id="2">
+        <title>Polish Book</title>
+        <author id="2">
+            <authorName>Daniel Łosniak</authorName>
+            <authorBirthYear>2013</authorBirthYear>
+            <authorBirthDate>1970-02-02T00:00:00+01:00</authorBirthDate>
+        </author>
+        <yearOfPublished>2023</yearOfPublished>
+    </book>
+</library>
