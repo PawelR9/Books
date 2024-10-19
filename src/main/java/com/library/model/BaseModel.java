@@ -1,14 +1,15 @@
 package com.library.model;
 
-import jakarta.xml.bind.annotation.XmlAttribute;
+import com.fasterxml.jackson.annotation.JsonProperty;
 public abstract class BaseModel {
+
+    @JsonProperty("id")
     protected int id;
 
     public int getId() {
         return id;
     }
 
-    @XmlAttribute
     public void setId(int id) {
         this.id = id;
     }

@@ -1,0 +1,25 @@
+{
+  "library" : {
+    "book_list" : [ {
+      "id" : 1,
+      "title" : "Solvd Book",
+      "author" : {
+        "id" : 1,
+        "author_name" : "Jan Kowalski",
+        "author_birth_place" : "Warsaw",
+        "author_birth_date" : "1980-01-01"
+      },
+      "published_year" : 2024
+    }, {
+      "id" : 2,
+      "title" : "Polish Book",
+      "author" : {
+        "id" : 2,
+        "author_name" : "Daniel Łosniak",
+        "author_birth_place" : "Kielce",
+        "author_birth_date" : "1970-02-02"
+      },
+      "published_year" : 2023
+    } ]
+  }
+}

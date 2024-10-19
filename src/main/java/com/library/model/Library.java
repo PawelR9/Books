@@ -1,19 +1,19 @@
 package com.library.model;
 
-import jakarta.xml.bind.annotation.XmlElement;
-import jakarta.xml.bind.annotation.XmlRootElement;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonRootName;
 
 import java.util.List;
 
-@XmlRootElement(name = "library")
+@JsonRootName(value = "library")
 public class Library {
+    @JsonProperty("book_list")
     private List<Book> bookList;
 
     public List<Book> getBookList() {
         return bookList;
     }
 
-    @XmlElement(name = "book")
     public void setBookList(List<Book> bookList) {
         this.bookList = bookList;
     }

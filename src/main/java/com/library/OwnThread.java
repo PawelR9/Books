@@ -20,7 +20,7 @@ public class OwnThread extends Thread {
     public void run() {
         Author newAuthor = new Author();
         newAuthor.setName("Author " + Thread.currentThread().getName());
-        newAuthor.setBirthYear(1980);
+        newAuthor.setBirthPlace("Kielce");
         try {
             authorDAO.create(newAuthor);
         } catch (SQLException e) {

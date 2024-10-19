@@ -17,10 +17,10 @@ public class AuthorDAO implements IAuthorDAO {
 
     @Override
     public void create(Author author) throws SQLException {
-        String sql = "INSERT INTO Author (name, birth_year) VALUES (?, ?)";
+        String sql = "INSERT INTO Author (name, birth_place) VALUES (?, ?)";
         try (PreparedStatement pstmt = connection.prepareStatement(sql)) {
             pstmt.setString(1, author.getName());
-            pstmt.setInt(2, author.getBirthYear());
+            pstmt.setString(2, author.getBirthPlace());
             pstmt.executeUpdate();
         }
     }
@@ -36,7 +36,7 @@ public class AuthorDAO implements IAuthorDAO {
                 author = new Author();
                 author.setId(rs.getInt("id"));
                 author.setName(rs.getString("name"));
-                author.setBirthYear(rs.getInt("birth_year"));
+                author.setBirthPlace(rs.getString("birth_place"));
             }
         }
         return author;
@@ -52,7 +52,7 @@ public class AuthorDAO implements IAuthorDAO {
                 Author author = new Author();
                 author.setId(rs.getInt("id"));
                 author.setName(rs.getString("name"));
-                author.setBirthYear(rs.getInt("birth_year"));
+                author.setBirthPlace(rs.getString("birth_place"));
                 authors.add(author);
             }
         }
@@ -61,10 +61,10 @@ public class AuthorDAO implements IAuthorDAO {
 
     @Override
     public void update(Author author) throws SQLException {
-        String sql = "UPDATE Author SET name = ?, birth_year = ? WHERE id = ?";
+        String sql = "UPDATE Author SET name = ?, birth_place = ? WHERE id = ?";
         try (PreparedStatement pstmt = connection.prepareStatement(sql)) {
             pstmt.setString(1, author.getName());
-            pstmt.setInt(2, author.getBirthYear());
+            pstmt.setString(2, author.getBirthPlace());
             pstmt.setInt(3, author.getId());
             pstmt.executeUpdate();
         }
