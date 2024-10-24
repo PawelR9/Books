@@ -7,7 +7,7 @@
             <authorBirthYear>1980</authorBirthYear>
             <authorBirthDate>1980-01-01T00:00:00+01:00</authorBirthDate>
         </author>
-        <yearOfPublished>2024</yearOfPublished>
+        <publishedYear>2024</publishedYear>
     </book>
     <book id="2">
         <title>Polish Book</title>
@@ -16,6 +16,6 @@
             <authorBirthYear>2013</authorBirthYear>
             <authorBirthDate>1970-02-02T00:00:00+01:00</authorBirthDate>
         </author>
-        <yearOfPublished>2023</yearOfPublished>
+        <publishedYear>2023</publishedYear>
     </book>
 </library>

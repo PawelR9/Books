@@ -11,6 +11,8 @@ public class BookDAO implements IBookDAO {
 
     private Connection connection;
 
+    public BookDAO() {
+    }
     public BookDAO(Connection connection) {
         this.connection = connection;
     }

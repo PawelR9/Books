@@ -11,6 +11,8 @@ public class AuthorDAO implements IAuthorDAO {
 
     private Connection connection;
 
+    public AuthorDAO() {
+    }
     public AuthorDAO(Connection connection) {
         this.connection = connection;
     }

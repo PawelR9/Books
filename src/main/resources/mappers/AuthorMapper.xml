@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.library.DAO.mybatis.AuthorMapper">
+
+    <insert id="insertAuthor">
+        INSERT INTO authors (name, birth_place, birth_date)
+        VALUES (#{name}, #{birthPlace}, #{birthDate})
+    </insert>
+
+    <select id="getAuthorById" resultMap="AuthorResultMap">
+        SELECT * FROM authors WHERE id = #{id}
+    </select>
+
+    <select id="getAllAuthors" resultMap="AuthorResultMap">
+        SELECT * FROM authors
+    </select>
+
+    <update id="updateAuthor">
+        UPDATE authors
+        SET name = #{name}, birth_place = #{birthPlace}, birth_date = #{birthDate}
+        WHERE id = #{id}
+    </update>
+
+    <delete id="deleteAuthor">
+        DELETE FROM authors WHERE id = #{id}
+    </delete>
+
+    <resultMap id="AuthorResultMap" type="com.library.model.Author">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="birthPlace" column="birth_place"/>
+        <result property="birthDate" column="birth_date"/>
+    </resultMap>
+
+</mapper>
